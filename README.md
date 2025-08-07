@@ -20,17 +20,6 @@ Welcome to the **Java Guide** – your all-in-one resource to prepare for backen
 
 ---
 
-## 📬 Let’s Connect!
-
-I'm always open to tech discussions, collaborations, and helping fellow devs. Reach out! 🚀
-
-- 🔗 [Linktree (All Socials)](https://linktr.ee/harshsinghcs)
-- 💼 [LinkedIn](https://linkedin.com/in/mrharshsingh)
-- 💻 [GitHub](https://github.com/harshsinghcs)
-- 📧 [Email](mailto:share.harshsingh@gmail.com)
-
----
-
 ## 👨‍💻 About Me
 
 <p align="center">
@@ -47,4 +36,14 @@ I'm always open to tech discussions, collaborations, and helping fellow devs. Re
 
 ---
 
+## 📬 Let’s Connect!
+
+I'm always open to tech discussions, collaborations, and helping fellow devs. Reach out! 🚀
+
+- 🔗 [Linktree (All Socials)](https://linktr.ee/harshsinghcs)
+- 💼 [LinkedIn](https://linkedin.com/in/mrharshsingh)
+- 💻 [GitHub](https://github.com/harshsinghcs)
+- 📧 [Email](mailto:share.harshsingh@gmail.com)
+
+---
 ⭐ *Feel free to contribute, suggest improvements, or just drop a star if this repo helped you!*
