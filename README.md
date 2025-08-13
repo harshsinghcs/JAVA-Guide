@@ -7,16 +7,20 @@ Welcome to the **Java Guide** – your all-in-one resource to prepare for backen
 ## 📌 Quick Links
 
 - 🔎 **[Java Interview Questions](/interview-Question.md)**  
-  Curated list of commonly asked Java-based interview questions with explanations.
+  💡 Curated list of commonly asked **Java** interview questions with clear explanations.
 
-- 🌐 **[Microservices Learning Flow for Students](/%20Microservices%20Learning%20Flow.md)**  
-  Step-by-step learning roadmap tailored for beginners to understand Microservices architecture.
+- 🏗️ **[Microservices Learning Flow for Students](/%20Microservices%20Learning%20Flow.md)**  
+  📚 Step-by-step roadmap for beginners to understand **Microservices** architecture.
 
 - 💬 **[Microservices Interview Questions (Java Focus)](/%20Microservices%20Interview%20Questions.md)**  
-  Real-world interview questions focused on Spring Boot + Microservices used in Java projects.
+  🛠️ Real-world interview questions on **Spring Boot + Microservices** in Java projects.
 
-- 🧭 **[15+ LPA Job Roadmap (Java Focused)](/15LPA%20Roadmap.md)**  
-  Structured roadmap to crack high-paying backend roles with the right tech stack and preparation.
+- 🚀 **[15+ LPA Job Roadmap (Java Focused)](/15LPA%20Roadmap.md)**  
+  🎯 Structured plan to crack **high-paying backend developer roles** with the right skills.
+
+- 🌱 **[Git](/git-notes.md)**  
+  🗂️ Comprehensive guide to using **Git commands**, resolving conflicts, and managing repositories.
+  
 
 ---
 
