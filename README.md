@@ -9,19 +9,27 @@ Welcome to the **Java Guide** – your all-in-one resource to prepare for backen
 - 🔎 **[Java Interview Questions](/interview-Question.md)**  
   💡 Curated list of commonly asked **Java** interview questions with clear explanations.
 
-- 🏗️ **[Microservices Learning Flow for Students](/%20Microservices%20Learning%20Flow.md)**  
+- 🏗️ **[Microservices Learning Flow for Students](/Micro%20services/%20Microservices%20Learning%20Flow.md)**  
   📚 Step-by-step roadmap for beginners to understand **Microservices** architecture.
 
-- 💬 **[Microservices Interview Questions (Java Focus)](/%20Microservices%20Interview%20Questions.md)**  
+- 💬 **[Microservices Interview Questions (Java Focus)](/Micro%20services/%20Microservices%20Interview%20Questions.md)**  
   🛠️ Real-world interview questions on **Spring Boot + Microservices** in Java projects.
 
 - 🚀 **[15+ LPA Job Roadmap (Java Focused)](/15LPA%20Roadmap.md)**  
   🎯 Structured plan to crack **high-paying backend developer roles** with the right skills.
 
-- 🌱 **[Git](/git-notes.md)**  
+- 🌱 **[Git](/Git(Version%20Control)/git-notes.md)**  
   🗂️ Comprehensive guide to using **Git commands**, resolving conflicts, and managing repositories.
-  
 
+- 🚀 **[Kafka](/Kafka/Kafka-notes.md)**  
+  🗂️ Detailed notes on **Apache Kafka** architecture, producers, consumers, brokers, topics, partitions, and real-world use cases.
+
+- 📬 **[Postman](/Tools/Postman.md)**  
+  🗂️ Guide to using **Postman** for API testing, collections, environments, and automation with scripts.  
+
+- 🛢️ **[MySQL](/DataBase/SQL%20&%20MySQL.md)**  
+  🗂️ In-depth notes on **SQL and MySQL** queries, indexing, joins, optimization techniques, and database design best practices.  
+  
 ---
 
 ## 👨‍💻 About Me
