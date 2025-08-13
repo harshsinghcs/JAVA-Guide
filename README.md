@@ -5,19 +5,19 @@ Welcome to the **Java Guide** – your all-in-one resource to prepare for backen
 It will cover:
 
 ### **Core & Essential**
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
-[![Advanced Java](https://img.shields.io/badge/Advanced%20Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/your-username/your-advanced-java-repo)
-[![JDBC](https://img.shields.io/badge/JDBC-007396?style=for-the-badge&logo=java&logoColor=white)](#)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://github.com/harshsinghcs/JAVA-Guide/blob/main/Git(Version%20Control)/git-notes.md)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](/JAVA/java-notes.md)
+[![Advanced Java](https://img.shields.io/badge/Advanced%20Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](/JAVA/Advanced_Java_CheatSheet.pdf)
+[![JDBC](https://img.shields.io/badge/JDBC-007396?style=for-the-badge&logo=java&logoColor=white)](/JAVA/JDBC-notes.md)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](/Git(Version%20Control)/git-notes.md)
 
 ### **DATABASE**
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](/DataBase/SQL%20&%20MySQL.md)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](#)
 
 
 ### **Web & Backend Frameworks**
 [![Servlets & JSP](https://img.shields.io/badge/Servlets%20%26%20JSP-FF5722?style=for-the-badge&logo=java&logoColor=white)](#)
-[![JPA / Hibernate](https://img.shields.io/badge/JPA%20%2F%20Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)](#)
+[![JPA / Hibernate](https://img.shields.io/badge/JPA%20%2F%20Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)](/JAVA/JPA-Hibernate.md)
 [![Spring & Spring Boot](https://img.shields.io/badge/Spring%20%26%20Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](#)
 [![Microservices Concepts](https://img.shields.io/badge/Microservices%20Concepts-FF9800?style=for-the-badge&logo=microservices&logoColor=white)](#)
 
