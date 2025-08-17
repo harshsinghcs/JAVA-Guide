@@ -79,6 +79,16 @@ git reset --hard HEAD~1    # Undo commit, delete changes
 git checkout -- file.txt   # Discard file changes
 ```
 
+### 🔹 **Cherry-pick**
+
+```bash
+git log --oneline                 # Find commit hash
+git checkout target-branch         # Switch to branch
+git cherry-pick <commit-hash>      # Apply commit here
+```
+
+👉 **Use Case**: Bring a specific bug fix or feature commit from one branch into another, without merging the whole branch.
+
 ### 🔹 **Logs**
 
 ```bash
@@ -126,6 +136,7 @@ node_modules/
 ✅ Use branches for features/fixes
 ✅ Keep `.gitignore` updated
 ✅ Never commit sensitive info
+✅ Use `git cherry-pick` to bring **specific commits** instead of merging whole branches
 
 ---
 
@@ -144,15 +155,33 @@ node_modules/
 >
 > If the conflict is complex, I use a merge tool or IDE helper. If I need to cancel, I run `git merge --abort`.
 
+Got it 👍 Let’s add one more clear point on **why we use `git cherry-pick`**.
+
+---
+
+## 9️⃣ Why use `git cherry-pick`?
+
+* To apply a **specific commit** from one branch onto another without merging the entire branch.
+* Useful when you want only a **bug fix, hotfix, or feature commit** from another branch, not all changes.
+* Helps in **hotfix releases**, where you need to quickly take one commit from `develop` and apply it to `main`.
+* Avoids unnecessary merge commits and keeps history cleaner. ✅
+
+---
+
+👉 Example:
+
+```bash
+git checkout main
+git cherry-pick <commit-hash>
+```
+
+This will bring just that commit from (say) `feature-branch` into `main`.
+
+---
+
 ✅ **Extra Tip for Interviews**:
 
 * “I pull frequently to reduce conflicts.”
 * “I test the project after resolving to ensure no breakages.”
 
----
 
-This version is:
-
-* **Tighter & cleaner** — no redundancy.
-* **Interview-ready** — clear answers for common Git questions.
-* **Easy to scan** — perfect for quick lookup while coding.
