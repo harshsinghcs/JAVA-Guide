@@ -44,9 +44,11 @@
 
 ---
 
-## 🔸 DDL Commands
+## 🔸 DDL Commands (Data Definition Language)
 
-### 🔹 `CREATE`
+*Used to define or change the structure of the database (tables, schema, etc.).*
+
+### 🔹 `CREATE` – Creates new tables, databases, or objects.
 
 ```sql
 CREATE TABLE users (
@@ -57,19 +59,19 @@ CREATE TABLE users (
 );
 ```
 
-### 🔹 `ALTER`
+### 🔹 `ALTER` – Modifies an existing table (add, delete, or modify columns).
 
 ```sql
 ALTER TABLE users ADD COLUMN age INT;
 ```
 
-### 🔹 `DROP`
+### 🔹 `DROP` – Deletes an existing table or database permanently.
 
 ```sql
 DROP TABLE users;
 ```
 
-### 🔹 `TRUNCATE`
+### 🔹 `TRUNCATE` – Removes all records from a table but keeps the structure.
 
 ```sql
 TRUNCATE TABLE users;
@@ -77,21 +79,23 @@ TRUNCATE TABLE users;
 
 ---
 
-## 🔸 DML Commands
+## 🔸 DML Commands (Data Manipulation Language)
 
-### 🔹 `INSERT`
+*Used to insert, modify, or delete data inside tables.*
+
+### 🔹 `INSERT` – Adds new records into a table.
 
 ```sql
 INSERT INTO users (name, email) VALUES ('Harsh', 'harsh@example.com');
 ```
 
-### 🔹 `UPDATE`
+### 🔹 `UPDATE` – Modifies existing records in a table.
 
 ```sql
 UPDATE users SET name = 'Harsh Singh' WHERE id = 1;
 ```
 
-### 🔹 `DELETE`
+### 🔹 `DELETE` – Removes records from a table.
 
 ```sql
 DELETE FROM users WHERE id = 1;
@@ -99,37 +103,42 @@ DELETE FROM users WHERE id = 1;
 
 ---
 
-## 🔸 DQL: `SELECT`
+## 🔸 DQL Command (Data Query Language)
 
-### Basic:
+*Used to retrieve data from the database.*
+
+### 🔹 `SELECT` – Fetches records from one or more tables.
+
+**Basic:**
 
 ```sql
 SELECT * FROM users;
 ```
 
-### With WHERE clause:
+**With WHERE clause (filtering):**
 
 ```sql
 SELECT * FROM users WHERE age > 25;
 ```
 
-### Sorting:
+**Sorting results:**
 
 ```sql
 SELECT * FROM users ORDER BY name ASC;
 ```
 
-### Filtering:
+**Selecting specific columns:**
 
 ```sql
 SELECT name, email FROM users WHERE email LIKE '%gmail.com';
 ```
 
-### Aggregate Functions:
+**Using Aggregate Functions (summary data):**
 
 ```sql
 SELECT COUNT(*), AVG(age), MAX(age) FROM users;
 ```
+
 
 ---
 
