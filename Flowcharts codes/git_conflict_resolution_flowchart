@@ -1,0 +1,19 @@
+digraph {
+	size=6
+	Q [label="❓ Wrong Commit / File Deleted"]
+	PUSH [label="✅ Was it pushed to remote?"]
+	NOT_PUSHED [label="Not pushed yet"]
+	RESET [label="Use git reset (soft/mixed/hard)"]
+	PUSHED [label="Already pushed"]
+	REVERT [label="Use git revert (safe for team)"]
+	FILE [label="File deleted by mistake"]
+	RESTORE [label="git checkout <commit> -- file
+or git restore --source=HEAD~1 file"]
+	Q -> PUSH
+	PUSH -> NOT_PUSHED [label=No]
+	NOT_PUSHED -> RESET
+	PUSH -> PUSHED [label=Yes]
+	PUSHED -> REVERT
+	Q -> FILE
+	FILE -> RESTORE
+}
