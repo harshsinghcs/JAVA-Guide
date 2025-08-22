@@ -165,3 +165,153 @@ transaction.commit();
 4. What is lazy vs eager loading?
 5. Explain Hibernate caching levels.
 6. How to map One-to-Many and Many-to-Many relationships?
+
+
+## Questions ke answers...!!
+
+### **1. Difference between JPA and Hibernate**
+
+* **JPA (Java Persistence API):**
+
+  * A **specification** (interface) for ORM (Object Relational Mapping).
+  * Defines how Java objects map to database tables, but does not provide implementation.
+  * Examples of JPA providers: Hibernate, EclipseLink, OpenJPA.
+
+* **Hibernate:**
+
+  * A **framework/implementation** of JPA.
+  * Provides actual ORM functionality like SQL generation, caching, dirty checking, etc.
+  * Hibernate adds extra features beyond JPA (e.g., `Criteria API`, `Session`, caching strategies).
+
+👉 **Interview Answer:**
+*"JPA is just a standard/specification, while Hibernate is an actual ORM framework that implements JPA and also provides additional features."*
+
+---
+
+### **2. EntityManager vs Session in Hibernate**
+
+* **EntityManager (JPA):**
+
+  * Defined by JPA.
+  * Provides APIs like `persist()`, `merge()`, `remove()`, `find()`.
+  * Thread-safe and works in JPA-compliant way.
+
+* **Session (Hibernate):**
+
+  * Hibernate-specific.
+  * Provides APIs like `save()`, `update()`, `saveOrUpdate()`, etc.
+  * More powerful with extra features (batch processing, criteria queries, native SQL, etc.).
+
+👉 **Interview Answer:**
+*"EntityManager is the JPA standard API, whereas Session is Hibernate’s native API. Internally, Hibernate’s Session implements the JPA EntityManager."*
+
+---
+
+### **3. Difference between `persist()` and `merge()`**
+
+* **persist()**
+
+  * Makes a **transient** entity → **managed**.
+  * If the entity already exists, throws `EntityExistsException`.
+  * Does **not return** anything.
+
+* **merge()**
+
+  * Copies the state of a **detached** entity into a **managed** entity.
+  * Returns the managed instance.
+  * Useful when you fetch an entity, modify outside session, then update DB.
+
+👉 **Interview Answer:**
+*"Use `persist()` for new entities. Use `merge()` when you already have a detached entity and want to reattach it to persistence context."*
+
+---
+
+### **4. Lazy vs Eager Loading**
+
+* **Lazy Loading (default for collections):**
+
+  * Data is loaded **only when accessed**.
+  * Uses proxy objects.
+  * Improves performance but can cause `LazyInitializationException` if accessed outside session.
+
+* **Eager Loading:**
+
+  * Data is loaded **immediately with parent entity**.
+  * Ensures availability but can cause **performance overhead** (fetching large unnecessary data).
+
+👉 **Interview Answer:**
+*"Lazy loads data only when required, improving performance. Eager fetches data immediately, which ensures availability but may load unnecessary data."*
+
+---
+
+### **5. Hibernate Caching Levels**
+
+* **First-Level Cache (Session cache):**
+
+  * Default, enabled automatically.
+  * Stores entities within the current `Session`.
+  * Cache is cleared when session closes.
+
+* **Second-Level Cache (SessionFactory cache):**
+
+  * Optional, must configure explicitly (Ehcache, Infinispan, etc.).
+  * Shared across sessions, improves performance by reducing DB calls.
+
+* **Query Cache:**
+
+  * Caches query results (depends on second-level cache).
+  * Stores IDs, not entities.
+
+👉 **Interview Answer:**
+*"Hibernate has 3 levels of caching: first-level (session-specific, mandatory), second-level (sessionFactory-level, optional but powerful), and query cache (stores query results)."*
+
+---
+
+### **6. Mapping One-to-Many & Many-to-Many**
+
+#### **One-to-Many**
+
+* Example: `Department` → `Employees`
+
+```java
+@Entity
+class Department {
+   @OneToMany(mappedBy="department", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+   private List<Employee> employees;
+}
+
+@Entity
+class Employee {
+   @ManyToOne
+   @JoinColumn(name="dept_id")
+   private Department department;
+}
+```
+
+#### **Many-to-Many**
+
+* Example: `Student` ↔ `Course`
+
+```java
+@Entity
+class Student {
+   @ManyToMany
+   @JoinTable(
+       name="student_course",
+       joinColumns=@JoinColumn(name="student_id"),
+       inverseJoinColumns=@JoinColumn(name="course_id")
+   )
+   private List<Course> courses;
+}
+
+@Entity
+class Course {
+   @ManyToMany(mappedBy="courses")
+   private List<Student> students;
+}
+```
+
+👉 **Interview Answer:**
+*"We use `@OneToMany` with `mappedBy` for one-to-many relationships and `@ManyToMany` with a `@JoinTable` for many-to-many mappings."*
+
+

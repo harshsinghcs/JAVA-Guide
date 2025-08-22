@@ -156,6 +156,8 @@ SELECT COUNT(*), AVG(age), MAX(age) FROM users;
 ---
 
 ## 🔸 Joins
+[![JOIN](https://img.shields.io/badge/JOIN-green?style=flat-square)](/DataBase/joins.md)
+
 
 | Type           | Description & Syntax     |
 | -------------- | ------------------------ |
