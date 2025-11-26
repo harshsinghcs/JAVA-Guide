@@ -2,6 +2,8 @@
 
 Welcome to the **Java Guide** – your all-in-one resource to prepare for backend development interviews with a focus on **Java, Spring Boot, and Microservices**.
 
+[![Click Here to See All Notes](https://img.shields.io/badge/SEE%20FULL%20NOTES-Click%20Here-blue?style=for-the-badge)](https://github.com/harshsinghcs/JAVA-Guide/tree/main)
+
 It will cover:
 
 ### **Core & Essential**
